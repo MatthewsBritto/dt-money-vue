@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { styled } from '@vue-styled-components/core'
-import Logo from '../../assets/IgniteSimbol.png'
+import Logo from '../assets/IgniteSimbol.png'
 
 const Header = styled.header`
   width: 100%;

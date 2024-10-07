@@ -3,6 +3,8 @@ import { theme } from './types/theme'; // Ajuste o caminho conforme necessário
 import { ThemeProvider } from 'vue3-styled-components';
 import { createApp } from 'vue';
 import App from './App.vue';
+import { OhVueIcon, addIcons } from "oh-vue-icons";
+
 
 const app = createApp(App);
 
