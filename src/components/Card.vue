@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { styled } from '@vue-styled-components/core'
 import { Icon } from '@iconify/vue'
+import { ref } from 'vue';
 
 const props = defineProps({
   title:  String,
@@ -9,6 +10,15 @@ const props = defineProps({
   type: String,
 })
 
+const color = ref( 
+  ( props.title === "Entradas" && "#00B37E" ) || 
+  ( props.title === "Saidas" && "#F75A68" ))
+
+const icon = ref(
+  ( props.title === "Entradas" && "ph:arrow-circle-up" )||
+  (props.title === "Saidas" && "ph:arrow-circle-down")||
+  "ph:currency-dollar"
+)  
 const CardContainer = styled.div`
   min-width:28rem;
   height:15rem;
@@ -24,6 +34,18 @@ const CardContainer = styled.div`
     justify-content:space-between;
     padding:.5rem 2rem;
     font-size:1.2rem;
+    
+
+    h3 {
+      color: ${(props) => props.theme.colors.gray6 }; 
+      font-weight:400;
+      letter-spacing:.12rem;
+    }
+
+    svg {
+      height:3rem;
+      width:3rem;
+    }
   }
 
   h1 {
@@ -36,6 +58,9 @@ const CardContainer = styled.div`
     font-size:1.2rem;
   }
 
+  @media (min-width:1280px){
+    width:35.2rem;
+  }
 `
 
 </script>
@@ -44,8 +69,7 @@ const CardContainer = styled.div`
   <CardContainer>
     <header>
       <h3>{{ props.title }}</h3>
-      <Icon icon="ph:arrow-circle-up" color="#00B37E" width="3rem" height="3rem"/>
-      
+      <Icon :icon="icon" :color="color" />
     </header>
     
     <h1>R$ {{ props.value }}</h1>

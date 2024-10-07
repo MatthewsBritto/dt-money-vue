@@ -10,7 +10,7 @@ const props  = defineProps({
 
 const Container = styled.div`
     position: relative;
-    top: -7rem;
+    top: -8rem;
     overflow-y: hidden;
     max-width: 1280px;
     padding: 0 2rem;
