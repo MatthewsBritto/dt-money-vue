@@ -4,10 +4,11 @@ import Header from './components/Header.vue';
 import {  ThemeProvider } from '@vue-styled-components/core'
 import { theme } from './types/theme'
 import Transations from './components/Transations.vue';
-
+import Input from './components/Input.vue';
 
 var count = ref(0)
- // Verifique o caminho
+ 
+  // Trocar nome da variavel para transitionsTypes
  var transations = ref([
    {
     title:"Entradas",
@@ -29,12 +30,12 @@ var count = ref(0)
   },
  ]);
 
-// Restante do seu código...
 </script>
 
 <template>
   <ThemeProvider :theme="theme">
     <Header />
    <Transations :transations="transations" />
+   <Input />
   </ThemeProvider>
 </template>

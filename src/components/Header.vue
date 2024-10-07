@@ -55,7 +55,7 @@ const HeaderContainer = styled.div`
   };
 `
 function teste(){
-  console.log("sxo")
+  console.log("teste")
 }
 </script>
 

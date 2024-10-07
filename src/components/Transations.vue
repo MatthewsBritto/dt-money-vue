@@ -20,14 +20,14 @@ const Container = styled.div`
     gap: 1.5rem;
 
 `
-console.log(props.transations)
+
 </script>
 
 <template>
    <Container>
       <div v-for="transation in transations" :key="transation.title">
         <Card 
-          :value=" transation.value "
+          :value="transation.value "
           :title=" transation.title " 
           :updatedAt=" transation.updatedAt "/>
       </div>

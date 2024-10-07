@@ -5,7 +5,7 @@ import { ref } from 'vue';
 
 const props = defineProps({
   title:  String,
-  value: Number,
+  value: String,
   updatedAt: String,
   type: String,
 })
@@ -19,6 +19,7 @@ const icon = ref(
   (props.title === "Saidas" && "ph:arrow-circle-down")||
   "ph:currency-dollar"
 )  
+
 const CardContainer = styled.div`
   min-width:28rem;
   height:15rem;
@@ -32,10 +33,9 @@ const CardContainer = styled.div`
     height:3.2rem;
     align-items:center;
     justify-content:space-between;
-    padding:.5rem 2rem;
-    font-size:1.2rem;
-    
-
+    padding:1.5rem 2rem;
+    font-size:1.2rem;    
+ 
     h3 {
       color: ${(props) => props.theme.colors.gray6 }; 
       font-weight:400;
@@ -50,16 +50,24 @@ const CardContainer = styled.div`
 
   h1 {
     font-size:3rem;
-    padding: 2rem 2rem .5rem;
+    padding: 0rem 2rem .5rem;
   }
 
   span{
-    padding:.5rem 2rem;
+    padding:0 2rem;
     font-size:1.2rem;
+    letter-spacing:.12rem;
+    color: ${(props) => props.theme.colors.gray6 }; 
   }
 
   @media (min-width:1280px){
     width:35.2rem;
+
+    header {
+      h3 {
+        font-size:2rem;
+      }
+    }
   }
 `
 
