@@ -3,7 +3,6 @@ import { Icon } from '@iconify/vue';
 import { styled } from '@vue-styled-components/core';
 
 const InputContainer = styled.div`
-  /* height:100%; */
   position:relative;
   top:-6rem;
   padding:0 2rem;

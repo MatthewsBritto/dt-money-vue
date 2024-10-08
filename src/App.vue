@@ -5,6 +5,7 @@ import {  ThemeProvider } from '@vue-styled-components/core'
 import { theme } from './types/theme'
 import Transations from './components/Transations.vue';
 import Input from './components/Input.vue';
+import List from './components/List.vue';
 
 var count = ref(0)
  
@@ -37,5 +38,6 @@ var count = ref(0)
     <Header />
    <Transations :transations="transations" />
    <Input />
+   <List />
   </ThemeProvider>
 </template>
