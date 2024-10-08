@@ -2,6 +2,9 @@
 import { Icon } from '@iconify/vue';
 import { styled } from '@vue-styled-components/core';
 
+const props = defineProps<{qtdTransactions: number}>()
+
+
 const InputContainer = styled.div`
   position:relative;
   top:-6rem;
@@ -93,7 +96,7 @@ const Button = styled.button`
   <InputContainer>
     <header>
       <h3>Transações</h3>
-      <span>4 itens</span>
+      <span>{{ props.qtdTransactions }} itens</span>
     </header>
     <div>
       <Input type="text" placeholder="Busque uma transação"/>

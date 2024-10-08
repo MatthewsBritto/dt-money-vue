@@ -2,71 +2,78 @@
   {
     "id": 818422,
     "title": "Movies",
-    "value": "$294.37",
+    "value": "294.37",
     "updatedAt": "2024-03-10T22:31:13Z",
     "type": "in"
   },
   {
     "id": 188443,
     "title": "Tools",
-    "value": "$326.45",
+    "value": "326.45",
     "updatedAt": "2024-08-28T04:07:29Z",
     "type": "in"
   },
   {
     "id": 360197,
     "title": "Outdoors",
-    "value": "-$353.55",
+    "value": "353.55",
     "updatedAt": "2024-06-14T12:38:53Z",
     "type": "out"
   },
   {
     "id": 158926,
     "title": "Kids",
-    "value": "$-265.12",
+    "value": "265.12",
     "updatedAt": "2024-04-19T01:59:16Z",
     "type": "out"
   },
   {
     "id": 202162,
     "title": "Kids",
-    "value": "$-498.95",
+    "value": "498.95",
     "updatedAt": "2024-06-02T11:47:17Z",
-    "type": "out"
+    "type": "in"
   },
   {
     "id": 71537,
     "title": "Outdoors",
-    "value": "$141.86",
+    "value": "141.86",
     "updatedAt": "2023-12-21T01:39:09Z",
     "type": "in"
   },
   {
     "id": 632670,
     "title": "Electronics",
-    "value": "$235.29",
+    "value": "235.29",
     "updatedAt": "2024-09-06T23:45:57Z",
     "type": "in"
   },
   {
     "id": 756676,
     "title": "Games",
-    "value": "$-124.62",
+    "value": "124.62",
     "updatedAt": "2024-02-23T21:53:43Z",
     "type": "out"
   },
   {
     "id": 249380,
     "title": "Music",
-    "value": "$-334.43",
+    "value": "334.43",
     "updatedAt": "2024-08-26T18:32:04Z",
     "type": "out"
   },
   {
     "id": 428930,
     "title": "Music",
-    "value": "$-407.36",
+    "value": "407.36",
     "updatedAt": "2024-01-18T03:32:26Z",
     "type": "in"
+  },
+  {
+    "id": 1884435,
+    "title": "Mercadinho",
+    "value": "300.45",
+    "updatedAt": "2024-08-28T04:07:29Z",
+    "type": "out"
   }
 ]

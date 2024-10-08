@@ -1,6 +1,6 @@
 import { TransactionType } from "@/types/transationsType";
 
-export function sortTransactionByDate(transactions: TransactionType[]) {
+export function sortTransactionByDate(transactions: TransactionType[]): TransactionType[] {
   const sortedTransactions = transactions.sort((a, b) => {
 
     // Função orderna os lancamentos pelo dia e  por ordem decrescente

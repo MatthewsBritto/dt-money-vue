@@ -7,6 +7,6 @@ export function dateFormatter (dateParam:string): string {
   const year = date.getUTCFullYear();
   
   const formattedDate = `${day}/${month}/${year}`;
-  console.log(formattedDate);
+  
   return formattedDate;
 }

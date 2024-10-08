@@ -1,7 +1,7 @@
 export interface TransactionType {
-  id: Number;
-  title:  String;
-  value: String;
-  updatedAt: String;
+  id: number;
+  title:  string;
+  value: string;
+  updatedAt: string;
   type: 'in' | 'out';
 }
