@@ -59,6 +59,10 @@ const Button = styled.button`
   background-color:${(props) => props.theme.colors.gray3};
   color:${(props) => props.theme.colors.greenLight};
 
+  &:hover {
+    cursor:pointer;
+  }
+  
   svg {
     height:100%;
     width:2rem;

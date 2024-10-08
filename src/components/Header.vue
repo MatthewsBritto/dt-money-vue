@@ -51,6 +51,7 @@ const HeaderContainer = styled.div`
     &:hover{
       background-color: ${(props) => props.theme.colors.greenLight};
       transition: all 1s ease-out;
+      cursor: pointer;
     }
   };
 `

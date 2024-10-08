@@ -4,6 +4,7 @@ import { Icon } from '@iconify/vue'
 import { ref } from 'vue';
 
 const props = defineProps({
+  id: Number,
   title:  String,
   value: String,
   updatedAt: String,

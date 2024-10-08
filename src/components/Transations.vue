@@ -25,7 +25,7 @@ const Container = styled.div`
 
 <template>
    <Container>
-      <div v-for="transation in transations" :key="transation.title">
+      <div v-for="transation in transations" :key="transation.id">
         <Card 
           :value="transation.value "
           :title=" transation.title " 
